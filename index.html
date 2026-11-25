@@ -1,0 +1,144 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Research Results" name="description"/>
+        <title>
+            Image-Space Russian Roulette for Monte Carlo Rendering
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css"/>
+        <link href="utils/report.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="content" id="content">
+            <h1 class="title">
+                Image-Space Russian Roulette for Monte Carlo Rendering
+            </h1>
+            <p class="authors">
+                Geonu Noh,
+                <a href="https://www.notion.so/Chanu-Yang-222662af0aa5805f8d40f3484942e640?source=copy_link" target="_blank" rel="noopener noreferrer">
+                    Chanu Yang
+                </a>
+                ,
+                <a href="https://cglab.gist.ac.kr/people/bochang.html" target="_blank" rel="noopener noreferrer">
+                    Bochang Moon
+                </a><br>
+                Gwangju Institute of Science and Technology (GIST)
+            </p>
+			<p class="authors">
+                <!-- <sup>1</sup> Institution withheld for double-blind review -->
+            </p>
+			<p>
+We compare our method with baseline path tracing, practical path guiding (PPG) [Müller et al. 2017], and EARS, a recent vertex-level Russian roulette method [Rath et al. 2022], under equal-time settings. Please click any image below to inspect the corresponding results in detail.
+			</p>
+            <h2>
+                Equal-Time Comparisons with Baseline Path Tracing
+            </h2>
+            <div class="element-container">
+                <div class="report-preview">
+                    <a href="result_baseline/bathroom/index.html">
+                        <img class="report-thumb-2" src="result_baseline/bathroom/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Bathroom</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/bedroom/index.html">
+                        <img class="report-thumb-2" src="result_baseline/bedroom/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Bedroom</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/coffee/index.html">
+                        <img class="report-thumb-2" src="result_baseline/coffee/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Coffee Machine</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/foggybathroom/index.html">
+                        <img class="report-thumb-2" src="result_baseline/foggybathroom/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Foggy Bathroom</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/glass/index.html">
+                        <img class="report-thumb-2" src="result_baseline/glass/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Glass of Water</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/lamp/index.html">
+                        <img class="report-thumb-2" src="result_baseline/lamp/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Lamp</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/staircase/index.html">
+                        <img class="report-thumb-2" src="result_baseline/staircase/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Staircase</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_baseline/teapot/index.html">
+                        <img class="report-thumb-2" src="result_baseline/teapot/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Teapot</span>
+                </div>
+            </div>
+			<h2>
+                Equal-Time Comparisons with PPG [Müller et al. 2017] and EARS [Rath et al. 2022]
+            </h2>
+            <div class="element-container">
+                <div class="report-preview">
+                    <a href="result_comparability/door/index.html">
+                        <img class="report-thumb-2" src="result_comparability/door/images/gt.png"/>
+                    </a>
+                    <br/>
+                    <span style="font-variant: small-caps;">Door</span>
+                </div>
+                <div class="report-preview">
+                    <a href="result_comparability/livingroom/index.html">
+                        <img class="report-thumb-2" src="result_comparability/livingroom/images/gt.png"/>
+                    </a>
+                    <br/>
+<span style="font-variant: small-caps;">Living Room</span>                    
+                </div>
+            </div>
+            <h2>
+                References
+            </h2>
+            <p>
+			    [Bitterli 2016] Benedikt Bitterli. 2016. Rendering resources. https://benedikt-bitterli.me/resources/.
+			</p>
+            <p>
+                [Müller et al. 2017] Thomas Müller, Markus Gross, and Jan Novák. 2017. Practical Path Guiding for Efficient Light-Transport Simulation. Computer Graphics Forum 36, 4 (July 2017), 91–100.
+            </p>
+            <p>
+                [Rath et al. 2022] Alexander Rath, Pascal Grittmann, Sebastian Herholz, Philippe Weier, and Philipp Slusallek. 2022. EARS: Efficiency-Aware Russian Roulette and Splitting. ACM Transactions on Graphics 41, 4 (July 2022), Article 81, 14 pages.
+            </p>
+
+            <h2>
+                Acknowledgements
+            </h2>
+            <p>
+			    We would like to thank Joey Litalien, Jan Novák, and Benedikt Bitterli for the interactive viewer, as well as the following artists: nacimus (Bathroom; Foggy Bathroom), SlykDrako (Bedroom), cekuhnen (Coffee Machine), BhaWin (Glass of Water), UP3D (Lamp), David Tirindelli (Living Room), NewSee2I035 (Staircase), Benedikt Bitterli (Door; Teapot;)
+            <h2>
+                License
+            </h2>
+            <p>
+                All codes for the interactive viewer are licensed under the MIT 
+                <a href="LICENSE" target="_blank" rel="noopener noreferrer">
+                    License
+                </a>
+            </p>
+        </div>
+    </body>
+</html>
